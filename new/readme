@@ -1,0 +1,28 @@
+pip install -r requirements.txt
+
+ollama pull phi3:mini
+ollama pull mistral:7b
+ollama pull deepseek-coder:6.7b
+
+# Option A: launch from PowerShell inside new/
+.\\run.ps1
+
+# Option B: launch manually from PowerShell inside new/
+# . ..\\venv\\Scripts\\Activate.ps1
+# python main.py
+
+# The application can also load a database from the frontend by uploading
+# SQLite, CSV, Excel, or SQL dump files, or by pasting a connection string.
+
+# Optional: import and use programmatically
+from ai_init import initialize
+from pipeline import DatabaseAssistant
+
+# Initialize from a connection string or uploaded files
+init_data = initialize(database_url="sqlite:///path/to/db.sqlite")
+assistant = DatabaseAssistant(init_data)
+
+# Ask questions
+result = assistant.run("Show departments with average salary above 50000")
+print(result["answer"])
+print(result["sql"])

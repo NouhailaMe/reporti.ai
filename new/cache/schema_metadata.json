@@ -1,0 +1,81 @@
+[
+  {
+    "table": "departments",
+    "columns": [
+      "dept_no",
+      "dept_name"
+    ],
+    "object_type": "table"
+  },
+  {
+    "table": "dept_emp",
+    "columns": [
+      "emp_no",
+      "dept_no",
+      "from_date",
+      "to_date"
+    ],
+    "object_type": "table"
+  },
+  {
+    "table": "dept_manager",
+    "columns": [
+      "emp_no",
+      "dept_no",
+      "from_date",
+      "to_date"
+    ],
+    "object_type": "table"
+  },
+  {
+    "table": "employees",
+    "columns": [
+      "emp_no",
+      "birth_date",
+      "first_name",
+      "last_name",
+      "gender",
+      "hire_date"
+    ],
+    "object_type": "table"
+  },
+  {
+    "table": "salaries",
+    "columns": [
+      "emp_no",
+      "salary",
+      "from_date",
+      "to_date"
+    ],
+    "object_type": "table"
+  },
+  {
+    "table": "titles",
+    "columns": [
+      "emp_no",
+      "title",
+      "from_date",
+      "to_date"
+    ],
+    "object_type": "table"
+  },
+  {
+    "table": "current_dept_emp",
+    "columns": [
+      "emp_no",
+      "dept_no",
+      "from_date",
+      "to_date"
+    ],
+    "object_type": "view"
+  },
+  {
+    "table": "dept_emp_latest_date",
+    "columns": [
+      "emp_no",
+      "from_date",
+      "to_date"
+    ],
+    "object_type": "view"
+  }
+]

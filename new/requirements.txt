@@ -1,0 +1,12 @@
+pandas>=2.0.0
+numpy>=1.24.0
+sqlalchemy>=2.0.0
+pymysql>=1.1.0
+requests>=2.31.0
+sentence-transformers>=2.2.2
+faiss-cpu>=1.7.4
+sqlglot>=18.0.0
+gradio>=4.0.0
+python-dotenv>=1.0.0
+openpyxl>=3.1.0
+xlrd>=2.0.1

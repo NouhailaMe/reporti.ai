@@ -1,0 +1,38 @@
+[
+  {
+    "TABLE_NAME": "dept_emp",
+    "COLUMN_NAME": "emp_no",
+    "REFERENCED_TABLE_NAME": "employees",
+    "REFERENCED_COLUMN_NAME": "emp_no"
+  },
+  {
+    "TABLE_NAME": "dept_emp",
+    "COLUMN_NAME": "dept_no",
+    "REFERENCED_TABLE_NAME": "departments",
+    "REFERENCED_COLUMN_NAME": "dept_no"
+  },
+  {
+    "TABLE_NAME": "dept_manager",
+    "COLUMN_NAME": "emp_no",
+    "REFERENCED_TABLE_NAME": "employees",
+    "REFERENCED_COLUMN_NAME": "emp_no"
+  },
+  {
+    "TABLE_NAME": "dept_manager",
+    "COLUMN_NAME": "dept_no",
+    "REFERENCED_TABLE_NAME": "departments",
+    "REFERENCED_COLUMN_NAME": "dept_no"
+  },
+  {
+    "TABLE_NAME": "salaries",
+    "COLUMN_NAME": "emp_no",
+    "REFERENCED_TABLE_NAME": "employees",
+    "REFERENCED_COLUMN_NAME": "emp_no"
+  },
+  {
+    "TABLE_NAME": "titles",
+    "COLUMN_NAME": "emp_no",
+    "REFERENCED_TABLE_NAME": "employees",
+    "REFERENCED_COLUMN_NAME": "emp_no"
+  }
+]

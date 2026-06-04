@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Réussir sa Soutenance au Maroc</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/white.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        
+        :root {
+            --primary-blue: #4A90E2;
+            --secondary-blue: #6FB8F5;
+            --dark-blue: #2C3E50;
+            --light-blue: #E8F4FC;
+            --accent-teal: #1ABC9C;
+        }
+        
+        .reveal {
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark-blue);
+        }
+        
+        .reveal .slides {
+            text-align: left;
+        }
+
+        .reveal .slides section {
+            box-sizing: border-box;
+            max-height: 100%;
+            overflow-y: auto;
+            padding-bottom: 2rem;
+        }
+        
+        .reveal h1, .reveal h2, .reveal h3 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--primary-blue);
+            text-transform: none;
+        }
+        
+        .reveal h1 { font-size: 2.2em; }
+        .reveal h2 { font-size: 1.6em; }
+        .reveal h3 { font-size: 1.2em; }
+        
+        .reveal p, .reveal li {
+            font-size: 0.7em;
+            line-height: 1.5;
+        }
+        
+        .reveal ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 10px 0;
+        }
+        
+        .reveal ul li {
+            margin: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .reveal ul li:before {
+            content: "▸";
+            color: var(--primary-blue);
+            position: absolute;
+            left: 5px;
+            font-weight: bold;
+        }
+        
+        .slide-background {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) !important;
+        }
+        
+        .title-slide {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: white;
+            border-radius: 25px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+        
+        .title-slide h1 {
+            color: white;
+            font-size: 2.3em;
+            margin-bottom: 15px;
+        }
+        
+        .title-slide .subtitle {
+            font-size: 1.2em;
+            opacity: 0.95;
+            margin-bottom: 30px;
+        }
+        
+        .content-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 10px 0;
+            box-shadow: 0 10px 40px rgba(74,144,226,0.1);
+            border-left: 4px solid var(--primary-blue);
+        }
+        
+        .info-box {
+            background: var(--light-blue);
+            border-radius: 12px;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 3px solid var(--accent-teal);
+        }
+        
+        .warning-box {
+            background: #FFF3CD;
+            border-radius: 12px;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 3px solid #FFC107;
+        }
+        
+        .success-box {
+            background: #D4EDDA;
+            border-radius: 12px;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 3px solid #28A745;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, var(--secondary-blue) 0%, var(--secondary-blue) 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 30%;
+            background-position: 0 88%;
+            padding: 0 3px;
+            font-weight: 600;
+        }
+        
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 15px 0;
+        }
+        
+        .three-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+            margin: 15px 0;
+        }
+        
+        .column {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background: var(--primary-blue);
+            color: white;
+            border-radius: 15px;
+            font-size: 0.65em;
+            margin: 3px;
+        }
+        
+        .question-box {
+            background: white;
+            border-radius: 12px;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid var(--primary-blue);
+            font-size: 0.75em;
+        }
+        
+        .question-box strong {
+            color: var(--primary-blue);
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+        
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            font-size: 0.75em;
+        }
+        
+        .checklist-item i {
+            color: var(--accent-teal);
+            margin-right: 10px;
+            font-size: 1.1em;
+            margin-top: 3px;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 10px 0;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            font-size: 0.65em;
+        }
+        
+        .comparison-table th {
+            background: var(--primary-blue);
+            color: white;
+            padding: 10px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .comparison-table td {
+            padding: 8px 10px;
+            border-bottom: 1px solid #e0e0e0;
+            background: white;
+        }
+        
+        .comparison-table tr:nth-child(even) td {
+            background: var(--light-blue);
+        }
+        
+        .reveal .controls {
+            color: var(--primary-blue);
+        }
+        
+        .reveal .progress {
+            background: rgba(0,0,0,0.1);
+            height: 4px;
+        }
+        
+        .reveal .progress span {
+            background: var(--primary-blue);
+        }
+        
+        footer {
+            position: fixed;
+            bottom: 15px;
+            right: 25px;
+            font-size: 0.55em;
+            color: var(--primary-blue);
+            opacity: 0.7;
+        }
+        
+        .icon-box {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: var(--primary-blue);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+        
+        .step-box {
+            background: white;
+            border-radius: 10px;
+            padding: 12px;
+            margin: 8px 0;
+            border-left: 3px solid var(--secondary-blue);
+            font-size: 0.75em;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Slide 1: Title -->
+            <section class="title-slide">
+                <h1><i class="fas fa-graduation-cap"></i> Comment Réussir sa Soutenance au Maroc</h1>
+                <div class="subtitle">Guide Complet pour PFE, Stage et Mémoire de Recherche</div>
+                <div style="margin-top: 30px; font-size: 1em;">
+                    <p style="margin-top: 20px; font-size: 0.9em;">
+                        <span class="badge">Volet A: Stage</span>
+                        <span class="badge">Volet B: PFE</span>
+                        <span class="badge">Volet C: Technique</span>
+                    </p>
+                </div>
+            </section>
+
+            <!-- Slide 2: Introduction -->
+            <section>
+                <h2><i class="fas fa-info-circle"></i> Introduction</h2>
+                <div class="two-columns">
+                    <div class="column">
+                        <h3 style="color: var(--primary-blue);"><i class="fas fa-briefcase"></i> Stage</h3>
+                        <ul>
+                            <li>Stage observatif (activités réalisées)</li>
+                            <li>Stage technique (sujet de stage)</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3 style="color: var(--primary-blue);"><i class="fas fa-book"></i> Recherche</h3>
+                        <ul>
+                            <li>PFE (Projet de Fin d'Études)</li>
+                            <li>Mémoire de recherche</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <strong>Objectif :</strong> Ce guide combine toutes les informations pour réussir votre présentation et rapport de soutenance selon les normes marocaines.
+                </div>
+            </section>
+
+
+
+            <!-- Slide 4: Structure du Rapport - Pages Préliminaires -->
+            <section>
+                <h2><i class="fas fa-file-alt"></i> Structure du Rapport Écrit (1/2)</h2>
+                <div class="two-columns">
+                    <div class="column">
+                        <h3 style="color: var(--primary-blue);">1. Pages Préliminaires</h3>
+                        <ul>
+                            <li>Page de garde</li>
+                            <li>Remerciements</li>
+                            <li>Résumé FR/EN</li>
+                            <li>Sommaire automatique</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3 style="color: var(--primary-blue);">2. Corps du Rapport</h3>
+                        <ul>
+                            <li>Introduction</li>
+                            <li>Chapitres structurés</li>
+                            <li>Résultats & Discussion</li>
+                            <li>Conclusion</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <strong>Mise en forme :</strong> Times New Roman ou Arial 12 · Interligne 1,5 · Texte justifié · Max 2 couleurs (noir + bleu foncé)
+                </div>
+            </section>
+
+            <!-- Slide 5: Structure du Rapport - Bibliographie -->
+            <section>
+                <h2><i class="fas fa-book"></i> Structure du Rapport Écrit (2/2)</h2>
+                <div class="two-columns">
+                    <div class="column">
+                        <h3 style="color: var(--primary-blue);">3. Bibliographie / webographie</h3>
+                        <ul>
+                            <li>Ordre alphabétique</li>
+                            <li>Auteur, Année, Titre</li>
+                            <li>Éditeur, URL</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3 style="color: var(--primary-blue);">4. Annexes</h3>
+                        <ul>
+                            <li>Instruments de collecte</li>
+                            <li>Données brutes</li>
+                            <li>Code source</li>
+                            <li>Schémas</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 6: Volet A - Stage Observatif -->
+            <section>
+                <h2><i class="fas fa-eye"></i> Volet A: Stage Observatif</h2>
+                <div class="three-columns">
+                    <div class="column">
+                        <h3 style="color: var(--primary-blue);">Introduction</h3>
+                        <ul>
+                            <li>Lieu du stage</li>
+                            <li>Période</li>
+                            <li>Objectif</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3 style="color: var(--primary-blue);">Présentation</h3>
+                        <ul>
+                            <li>Entreprise (lieu, nom)</li>
+                            <li>Niveaux</li>
+                            <li>Organisation</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3 style="color: var(--primary-blue);">Activités</h3>
+                        <ul>
+                            <li>Tâches réalisées</li>
+                            <li>Apprentissages</li>
+                            <li>Conseils encadrant</li>
+                            <li>Travail d'équipe</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <strong>Conclusion :</strong> Difficultés rencontrées + Résumé des apprentissages + N'oubliez pas les références !
+                </div>
+            </section>
+
+            <!-- Slide 7: Volet B - PFE/Mémoire Structure -->
+            <section>
+                <h2><i class="fas fa-project-diagram"></i> Volet B: PFE / Mémoire - Structure</h2>
+                <div class="two-columns">
+                    <div class="column">
+                        <h3 style="color: var(--primary-blue);">Structure de présentation</h3>
+                        <ol style="font-size: 0.8em; line-height: 1.8;">
+                            <li>page de garde</li>
+                            <li>Plan</li>
+                            <li>contexte + chiffres + images + stats</li>
+                            <li>problématique</li>
+                            <li>objectifs</li>
+                            <li>hypothèses / type d'étude</li>
+                            <li>population + outils de collecte</li>
+                            <li>méthode d'analyse</li>
+                            <li>Résultats + Démo</li>
+                            <li>Discussion + Interprétation</li>
+                            <li>Difficultés + Recommandations</li>
+                            <li>Conclusion critique</li>
+                            <li>Merci pour votre attention + est-ce qu'il y a des questions ?</li>
+                        </ol>
+                    </div>
+                    <div class="column">
+                        <h3 style="color: var(--primary-blue);">Structure du Rapport</h3>
+                        <ul>
+                            <li><strong>Intro générale :</strong> intro + Entreprise + Problématique</li>
+                            <li><strong>Ch 1 :</strong> Entreprise détaillée + Organisation + Service</li>
+                            <li><strong>Ch 2 :</strong> contexte, objectifs, cahier des charges</li>
+                            <li><strong>Ch 3 :</strong> hypothèses / type d'étude + population + outils de collecte</li>
+                            <li><strong>Ch 4 :</strong> méthode d'analyse + méthodologie</li>
+                            <li><strong>Ch 5 :</strong> résultats + discussion + interprétation</li>
+                            <li><strong>Conclusion générale :</strong> conclusion + limites + recommendations</li>
+                            <li><strong>Bibliographie :</strong> bibliographie + annexes</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 8: Volet C - Stage Technique -->
+            <section>
+                <h2><i class="fas fa-laptop-code"></i> Volet C: Stage Technique</h2>
+                <div class="warning-box">
+                    <strong>Spécificité :</strong> L'étudiant travaille sur un <span class="highlight">sujet technique concret</span> (développement, conception, analyse) plutôt que sur des missions d'observation. Le jury évalue la rigueur méthodologique, la justification des choix, et la capacité à expliquer simplement.
+                </div>
+                <div class="three-columns">
+                    <div class="column">
+                        <h3 style="color: var(--primary-blue);">Chapitre 1-2</h3>
+                        <ul>
+                            <li>Entreprise</li>
+                            <li>Analyse besoins & cahier des charges</li>
+                            <li>Spécifications</li>
+                            <li>Cas d'utilisation ... (diagrammes UML)</li>
+                            <li>Contraintes</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3 style="color: var(--primary-blue);">Chapitre 3</h3>
+                        <ul>
+                            <li>Architecture</li>
+                            <li>Choix techno</li>
+                            <li>Design patterns</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3 style="color: var(--primary-blue);">Chapitre 4-5-6</h3>
+                        <ul>
+                            <li>Réalisation</li>
+                            <li>Tests</li>
+                            <li>Résultats</li>
+                            <li>limites & recommendations</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 9: PowerPoint - Règles -->
+            <section>
+                <h2><i class="fas fa-presentation"></i> Le PowerPoint Idéal - Règles</h2>
+                <div class="two-columns">
+                    <div class="column">
+                        <h3 style="color: var(--primary-blue);">Spécifications</h3>
+                        <ul>
+                            <li>10-13 slides</li>
+                            <li>10-20 minutes</li>
+                            <li>1 idée = 1 slide</li>
+                            <li>Max 6 lignes par slide</li>
+                            <li>Police ≥ 24</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3 style="color: var(--primary-blue);">Design</h3>
+                        <ul>
+                            <li>Contraste fort</li>
+                            <li>Palette 2-3 couleurs max</li>
+                            <li>Pas de stickers</li>
+                            <li>Schémas > Texte</li>
+                            <li>Animations sobres</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="success-box">
+                    <strong>Règle d'or :</strong> PAS DE TEXTE - Expliquez oralement plus que ce qui est écrit. Les slides sont un support, pas un script.
+                </div>
+            </section>
+
+            <!-- Slide 10: PowerPoint - Plan des Slides (1/2) -->
+            <section>
+                <h2> <i class="fas fa-list-ol"></i> Plan des Slides </h2>
+                <div class="three-columns">
+                    <div class="column">
+                        <div class="step-box">
+                            <strong>01 Page de garde</strong><br>
+                            Titre · Nom · École · Encadrants · Année
+                        </div>
+                        <div class="step-box">
+                            <strong>02 Contexte & enjeux</strong><br>
+                            Chiffres clés · Image forte · Schéma
+                        </div>
+                        <div class="step-box">
+                            <strong>03 Problématique / + analyse de besoins</strong><br>
+                            Question centrale + sous-questions (CŒUR) / digrammes UML !
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="step-box">
+                            <strong>04 Méthodologie / architecture & outils</strong><br>
+                            Type d'étude · Terrain · Outils · Planning / Architecture technique
+                        </div>
+                        <div class="step-box">
+                            <strong>05-07 Résultats clés / démo live ou vidéo</strong><br>
+                            3-4 messages max · Graphiques · Visuels
+                        </div>
+                        <div class="step-box">
+                            <strong>08 Discussion </strong><br>
+                            Interprétation + Littérature (mémoire)
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="step-box">
+                            <strong>09 Limites & reco.</strong><br>
+                            Honnêteté · Difficultés · Recommandations réalistes 
+                        </div>
+                        <div class="step-box">
+                            <strong>10 Conclusion</strong><br>
+                            Réponse problématique 
+                        </div>
+                        <div class="step-box">
+                            <strong>11 remerciements + questions</strong><br>
+                            Merci pour votre attention + est-ce qu'il y a des questions ?
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Slide 3: Avant la soutenance - Préparation -->
+            <section>
+                <h2><i class="fas fa-clock"></i> Avant la Soutenance - Préparation</h2>
+                <div class="two-columns">
+                    <div class="column">
+                        <h3 style="color: var(--primary-blue);"><i class="fas fa-stopwatch"></i> Timing</h3>
+                        <ul>
+                            <li>Répétez avec un timer</li>
+                            <li>15 min de présentation → entraînez-vous sur 12 min</li>
+                            <li>Gardez une marge de sécurité</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3 style="color: var(--primary-blue);"><i class="fas fa-laptop"></i> Matériel</h3>
+                        <ul>
+                            <li>PC + clé USB + PDF de secours</li>
+                            <li>Testez le matériel la veille</li>
+                            <li>Arrivez 30 min avant</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="two-columns">
+                    <div class="column">
+                        <h3 style="color: var(--primary-blue);"><i class="fas fa-sticky-note"></i> Fiches</h3>
+                        <ul>
+                            <li>Préparez des fiches "points clés"</li>
+                            <li>Jamais de texte intégral</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3 style="color: var(--primary-blue);"><i class="fas fa-tshirt"></i> Tenue</h3>
+                        <ul>
+                            <li>Professionnelle et confortable</li>
+                            <li>Vous serez debout longtemps</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="success-box">
+                    <strong>Règle d'or :</strong> Répétez à voix haute devant un miroir ou filmez-vous. Le stress diminue avec chaque répétition.
+                </div>
+            </section>
+
+            <!-- Slide 12: Pendant la présentation -->
+            <section>
+                <h2><i class="fas fa-user-tie"></i> Pendant la Présentation</h2>
+                <div class="three-columns">
+                    <div class="column">
+                        <h3 style="color: var(--primary-blue);"><i class="fas fa-eye"></i> Regard</h3>
+                        <ul>
+                            <li>Circulaire</li>
+                            <li>Engagez tout le jury</li>
+                            <li>Ne fixez pas l'écran</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3 style="color: var(--primary-blue);"><i class="fas fa-volume-up"></i> Voix</h3>
+                        <ul>
+                            <li>Débit modéré</li>
+                            <li>Pauses stratégiques</li>
+                            <li>Voix haute et lente</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3 style="color: var(--primary-blue);"><i class="fas fa-flask"></i> Langage</h3>
+                        <ul>
+                            <li>Scientifique</li>
+                            <li>"Les résultats montrent"</li>
+                            <li>Pas "je pense que"</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="two-columns">
+                    <div class="column">
+                        <h3 style="color: var(--primary-blue);"><i class="fas fa-walking"></i> Mouvement</i></h3>
+                        <ul>
+                            <li>Bougez naturellement</li>
+                            <li>Ne restez pas statique</li>
+                            <li>Gestuelle ouverte</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3 style="color: var(--primary-blue);"><i class="fas fa-book-reader"></i> Support</h3>
+                        <ul>
+                            <li>Expliquez les slides</li>
+                            <li>Ne les lisez pas</li>
+                            <li>Ne récitez pas</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 13: Formule de réussite -->
+            <section>
+                <h2><i class="fas fa-trophy"></i> Formule de Réussite</h2>
+                <div class="content-card" style="text-align: center; padding: 40px;">
+                    <div style="font-size: 2em; margin: 30px 0;">
+                        <div style="display: inline-block; background: var(--primary-blue); color: white; padding: 20px 40px; border-radius: 15px; margin: 10px;">
+                            <i class="fas fa-book-open"></i><br>
+                            <strong>50%</strong><br>
+                            Rapport
+                        </div>
+                        <div style="display: inline-block; background: var(--secondary-blue); color: white; padding: 20px 40px; border-radius: 15px; margin: 10px;">
+                            <i class="fas fa-paint-brush"></i><br>
+                            <strong>25%</strong><br>
+                            Présentation
+                        </div>
+                        <div style="display: inline-block; background: var(--accent-teal); color: white; padding: 20px 40px; border-radius: 15px; margin: 10px;">
+                            <i class="fas fa-user-check"></i><br>
+                            <strong>25%</strong><br>
+                            Projet
+                        </div>
+                    </div>
+                    <div class="success-box" style="font-size: 1.1em; margin-top: 30px;">
+                        <strong>Clarté · Humilité · Capacité à dialoguer avec le jury</strong>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 14: Questions du Jury - Partie 1 -->
+            <section>
+                <h2><i class="fas fa-question-circle"></i> Questions du Jury (1/2)</h2>
+                <div class="two-columns">
+                    <div class="column">
+                        <div class="question-box">
+                            <strong><i class="fas fa-cogs"></i> Pourquoi cette méthodologie ?</strong>
+                            <em>Réponse :</em> Justifiez par l'adéquation avec l'objectif + assumez les limites
+                        </div>
+                        <div class="question-box">
+                            <strong><i class="fas fa-microchip"></i> Pourquoi ces technologies ?</strong>
+                            <em>Réponse :</em> Avantages concrets + contraintes terrain
+                        </div>
+                        <div class="question-box">
+                            <strong><i class="fas fa-mountain"></i> Difficultés rencontrées ?</strong>
+                            <em>Conseil :</em> Honnêteté + posture proactive
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="question-box">
+                            <strong><i class="fas fa-sitemap"></i> Conception & architecture ?</strong>
+                            <em>Conseil :</em> Expliquez clairement les choix
+                        </div>
+                        <div class="question-box">
+                            <strong><i class="fas fa-redo"></i> Que feriez-vous différemment ?</strong>
+                            <em>Réponse :</em> Montrez votre recul critique
+                        </div>
+                        <div class="question-box">
+                            <strong><i class="fas fa-gift"></i> Qu'apporte votre travail ?</strong>
+                            <em>Réponse :</em> Valeur ajoutée claire
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 15: Questions du Jury - Partie 2 -->
+            <section>
+                <h2><i class="fas fa-question-circle"></i> Questions du Jury (2/2)</h2>
+                <div class="two-columns">
+                    <div class="column">
+                        <div class="question-box">
+                            <strong>Pourquoi ce sujet ?</strong>
+                        </div>
+                        <div class="question-box">
+                            <strong>Importance de la recherche ?</strong>
+                        </div>
+                        <div class="question-box">
+                            <strong>Problème de la recherche ?</strong>
+                        </div>
+                        <div class="question-box">
+                            <strong>Résultats dominants ?</strong>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="question-box">
+                            <strong>Conseils pour le futur ?</strong>
+                        </div>
+                        <div class="question-box">
+                            <strong>Pourquoi cet échantillon ?</strong>
+                        </div>
+                        <div class="question-box">
+                            <strong>Limites de l'étude ?</strong>
+                        </div>
+                        <div class="question-box">
+                            <strong>Si incertain :</strong> "Question pertinente. Selon ma compréhension..."
+                        </div>
+                    </div>
+                </div>
+                <div class="warning-box">
+                    <strong>Jamais "je ne sais pas"</strong> → Dites plutôt : "Je vais chercher" / "Je suggère de..." / "Selon mes connaissances..."
+                </div>
+            </section>
+
+            <!-- Slide 16: Méthode STAR -->
+            <section>
+                <h2><i class="fas fa-star"></i> Méthode STAR pour Répondre</h2>
+                <div class="three-columns">
+                    <div class="column" style="border-top: 4px solid #4A90E2;">
+                        <h3 style="color: #4A90E2; font-size: 2em; text-align: center;">S</h3>
+                        <h4 style="text-align: center;">Situation</h4>
+                        <p>Expliquez le contexte et la situation de départ</p>
+                    </div>
+                    <div class="column" style="border-top: 4px solid #6FB8F5;">
+                        <h3 style="color: #6FB8F5; font-size: 2em; text-align: center;">T</h3>
+                        <h4 style="text-align: center;">Tâche</h4>
+                        <p>Décrivez votre mission et objectifs</p>
+                    </div>
+                    <div class="column" style="border-top: 4px solid #1ABC9C;">
+                        <h3 style="color: #1ABC9C; font-size: 2em; text-align: center;">A</h3>
+                        <h4 style="text-align: center;">Action</h4>
+                        <p>Détaillez les étapes réalisées</p>
+                    </div>
+                </div>
+                <div class="column" style="margin-top: 20px; border-top: 4px solid #28A745;">
+                    <h3 style="color: #28A745; font-size: 2em; text-align: center;">R</h3>
+                    <h4 style="text-align: center;">Résultat</h4>
+                    <p style="text-align: center;">Présentez les résultats obtenus et l'impact</p>
+                </div>
+                <div class="warning-box" style="margin-top: 20px;">
+                    <strong>Important :</strong> Quand le jury questionne, ne regardez pas les slides → Ça montre que vous ne maîtrisez pas votre travail.
+                </div>
+            </section>
+
+            <!-- Slide 17: LaTeX vs Word -->
+            <section>
+                <h2><i class="fas fa-keyboard"></i> LaTeX vs Word</h2>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Critère</th>
+                            <th>LaTeX</th>
+                            <th>Word</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Équations</strong></td>
+                            <td>⭐⭐⭐⭐⭐ Natif</td>
+                            <td>⭐⭐⭐ Basique</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Bibliographie</strong></td>
+                            <td>⭐⭐⭐⭐⭐ BibTeX</td>
+                            <td>⭐⭐⭐ Plugins</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mise en page</strong></td>
+                            <td>⭐⭐⭐⭐⭐ Stable</td>
+                            <td>⭐⭐ Décalages</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Collaboration</strong></td>
+                            <td>⭐⭐⭐⭐ Overleaf</td>
+                            <td>⭐⭐⭐ OneDrive</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Apprentissage</strong></td>
+                            <td>⭐⭐ Complexe</td>
+                            <td>⭐⭐⭐⭐⭐ Intuitif</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="success-box">
+                    <strong>Recommandation :</strong> Informatique/Maths → LaTeX | Gestion/Droit → Word 
+                </div>
+            </section>
+
+            <!-- Slide 18: Templates & Ressources -->
+            <section>
+                <h2><i class="fas fa-download"></i> Templates & Ressources</h2>
+                <div class="two-columns">
+                    <div class="column">
+                        <h3 style="color: var(--primary-blue);">Templates LaTeX</h3>
+                        <ul>
+                            <li><strong>PFE ENSATe :</strong> Overleaf</li>
+                            <li><strong>ENP PFE :</strong> Overleaf</li>
+                            <li><strong>INPT Report :</strong> Overleaf</li>
+                            <li><strong>GitHub PFE Maroc :</strong> Trkzi-Omar</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3 style="color: var(--primary-blue);">Ressources Maroc</h3>
+                        <ul>
+                            <li><strong>Toubkal (IMIST) :</strong> toubkal.imist.ma</li>
+                            <li><strong>UM6SS Digital :</strong> digital.um6ss.ma</li>
+                            <li><strong>FSJES UCA :</strong> fsjes.uca.ma</li>
+                            <li><strong>FST USMBA :</strong> memoirepfe.fst-usmba.ac.ma</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="two-columns">
+                    <div class="column">
+                        <h3 style="color: var(--primary-blue);">PowerPoint</h3>
+                        <ul>
+                            <li><strong>Slidesgo :</strong> slidesgo.com</li>
+                            <li><strong>Canva :</strong> canva.com</li>
+                            <li><strong>GitHub :</strong> github.com/topics/pfe</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3 style="color: var(--primary-blue);">IA </h3>
+                        <ul>
+                            <li><strong>Overleaf + IA</strong></li>
+                            <li><strong>zerogpt.com + freeaiden.com</strong></li>
+                            <li><strong>Grammarly</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 19: Checklist Finale -->
+            <section>
+                <h2><i class="fas fa-clipboard-check"></i> Checklist Finale</h2>
+                <div class="two-columns">
+                    <div class="column">
+                        <h3 style="color: var(--primary-blue);"><i class="fas fa-file-alt"></i> Rapport</h3>
+                        <div class="checklist-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>Structure conforme + pagination</div>
+                        </div>
+                        <div class="checklist-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>Bibliographie complète</div>
+                        </div>
+                        <div class="checklist-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>Résumé FR/EN + mots-clés</div>
+                        </div>
+                        <div class="checklist-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>Pas de fautes d'orthographe</div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h3 style="color: var(--primary-blue);"><i class="fas fa-laptop"></i> Présentation</h3>
+                        <div class="checklist-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>≤ 13 slides, lisibles à 3m</div>
+                        </div>
+                        <div class="checklist-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>PDF de secours prêt</div>
+                        </div>
+                        <div class="checklist-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>PC + clé USB testés</div>
+                        </div>
+                        <div class="checklist-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>Timing 12 min répété</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column" style="margin-top: 15px;">
+                    <h3 style="color: var(--primary-blue);"><i class="fas fa-user-check"></i> Posture & Mental</h3>
+                    <div class="checklist-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>Tenue professionnelle</div>
+                    </div>
+                    <div class="checklist-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>Fiches "points clés" prêtes</div>
+                    </div>
+                    <div class="checklist-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>Questions jury anticipées</div>
+                    </div>
+                    <div class="checklist-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>Arriver 30 min avant</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 20: Conclusion -->
+            <section class="title-slide">
+                <h1><i class="fas fa-star"></i> En Résumé</h1>
+                <div style="font-size: 1.2em; margin: 30px 0;">
+                    <p>En general, pour reussir le rapport :</p>
+                    <div style="background: rgba(255,255,255,0.2); padding: 25px; border-radius: 15px; margin: 25px 0;">
+                        <p style="font-size: 1.1em; margin: 10px 0;"><strong>Tu dois suivre un plan</strong></p>
+                        <p style="font-size: 1.1em; margin: 10px 0;"><strong>Pas de travail aleatoire</strong></p>
+                        <p style="font-size: 1.1em; margin: 10px 0;"><strong>Il faut suivre l'objectif du sujet</strong></p>
+                        <p style="margin-top: 15px; font-size: 0.95em;">Clarté, humilité et capacité à dialoguer avec le jury</p>
+                    </div>
+                </div>
+                <div style="margin-top: 40px; font-size: 1.2em;">
+                    <p><i class="fas fa-heart"></i> Bonne chance à tous !</p>
+                    <p style="margin-top: 15px; font-size: 1em;">شجّعوا بعضكم</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        Guide Complet Soutenance - Maroc 2026
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            slideNumber: 'c/t',
+            showSlideNumber: 'all',
+            transition: 'convex',
+            backgroundTransition: 'fade',
+            width: 1200,
+            height: 700,
+            margin: 0.1,
+            minScale: 0.5,
+            maxScale: 1.5,
+            center: false,
+            controls: true,
+            progress: true,
+            history: true,
+            keyboard: true,
+            overview: true,
+            fragmentInURL: false,
+            touch: true,
+            loop: false,
+            scrollable: true
+        });
+    </script>
+</body>
+</html>

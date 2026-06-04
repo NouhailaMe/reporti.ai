@@ -1,0 +1,31 @@
+{
+  "schema_signature": "644f70911877eb5671d4fee23c4c5a061875f25faf55ff804ab9bbae3d34f802",
+  "version": 2,
+  "entries": {
+    "644f70911877eb5671d4fee23c4c5a061875f25faf55ff804ab9bbae3d34f802::PLAN::who is the employee that has the highest salary ?": {
+      "intent": "DATABASE",
+      "metadata_action": "unknown",
+      "target_object": null,
+      "needs_clarification": false,
+      "clarification_question": null,
+      "confidence": 0.23517537117004395
+    },
+    "644f70911877eb5671d4fee23c4c5a061875f25faf55ff804ab9bbae3d34f802::AUTO::who is the employee that has the highest salary ?": {
+      "intent": "DATABASE",
+      "question": "who is the employee that has the highest salary ?",
+      "normalized_question": "Who in the 'employees' table has the highest salary?",
+      "sql": "SELECT emp_no, last_name, first_name, salary FROM employees ORDER BY salary DESC LIMIT 1;",
+      "answer": "Error executing query: Execution failed on sql 'SELECT emp_no, last_name, first_name, salary FROM employees ORDER BY salary DESC LIMIT 1;': (pymysql.err.OperationalError) (1054, \"Unknown column 'salary' in 'field list'\")\n[SQL: SELECT emp_no, last_name, first_name, salary FROM employees ORDER BY salary DESC LIMIT 1;]\n(Background on this error at: https://sqlalche.me/e/20/e3q8)",
+      "rows": [],
+      "error": "Execution failed on sql 'SELECT emp_no, last_name, first_name, salary FROM employees ORDER BY salary DESC LIMIT 1;': (pymysql.err.OperationalError) (1054, \"Unknown column 'salary' in 'field list'\")\n[SQL: SELECT emp_no, last_name, first_name, salary FROM employees ORDER BY salary DESC LIMIT 1;]\n(Background on this error at: https://sqlalche.me/e/20/e3q8)",
+      "timings": {
+        "retrieve_initial": 0.03,
+        "normalize": 73.42,
+        "rag_expand": 73.54,
+        "schema_build": 73.54,
+        "sql_generate": 205.5,
+        "sql_validate": 205.86
+      }
+    }
+  }
+}
